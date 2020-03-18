@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rezerwacja lotu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='rezerwacja-lotu.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="menu">
+            <img src="logo.jpg" alt="logo" class="logo">
+            <a href="strona-glowna.html">Strona główna</a>
+            <a href="tabela-lotow.html">Tabela lotów</a>
+            <a href="rezerwacja-lotu.html">Rezerwuj lot</a>
+            <button class="dropdown-btn">O nas 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Nasza flota</a>
+                <a href="#">Nasza załoga</a>
+                <a href="#">Historia</a>
+            </div>
+            <a href="#">Kontakt</a>
+        </div>
+        <div class="rezerwacja-lotu">
+            <h1>Rezerwacja lotu</h1>
+            <div class="formularz">
+            <div class="lewo-formularz">
+                Skąd:<br>
+                <select class="skad" name="skad">
+                    <option value="bruksela">Bruksela</option>
+                    <option value="karlsruhe">Karlsruhe</option>
+                    <option value="katowice">Katowice</option>
+                    <option value="krakow">Kraków</option>
+                    <option value="lwow">Lwów</option>
+                    <option value="paryz">Paryż</option>
+                    <option value="rzym">Rzym</option>
+                    <option value="warszawa">Warszawa</option>
+                </select><br>
+                Imię:<br>
+                <input type="text" id="fname" name="fname" placeholder="Marta"><br>
+                Data:<br>
+                <input type="date" value="2019-06-01">
+                <input type="submit" value="Rezerwuj" class="submit">
+            </div>
+            <div class="prawo-formularz"> 
+                Dokąd:<br>
+                <select class="dokad" name="dokad">
+                    <option value="bruksela">Bruksela</option>
+                    <option value="karlsruhe">Karlsruhe</option>
+                    <option value="katowice">Katowice</option>
+                    <option value="krakow">Kraków</option>
+                    <option value="lwow">Lwów</option>
+                    <option value="paryz">Paryż</option>
+                    <option value="rzym">Rzym</option>
+                    <option value="warszawa">Warszawa</option>
+                </select><br>
+                Nazwisko:<br>
+                <input type="text" id="lname" name="lname" placeholder="Markocka"><br>
+            </div>
+            </div>
+        </div>
+        <div class="useless"></div>
+    </div>
+</body>
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+</script>
+</html>
