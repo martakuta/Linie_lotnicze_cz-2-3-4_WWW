@@ -1,48 +1,24 @@
 .rezerwacja-lotu {
     display: flex;
     background-color: white;
-    padding: 2%;
-    padding-left: 0;
     flex-direction: column;
-    flex-basis: 75%;
 }
 
 .formularz {
     display: flex;
     flex-direction: row;
     background-color: rgb(245, 245, 245);
-    flex-basis: 60%;
     font-size: 18px;
     font-family: arial, sans-serif;
     text-transform: uppercase;
+    text-align: left;
     color: rgb(39, 170, 226);
-    padding: 1%;
 }
 
 .lewo-formularz, .prawo-formularz {
     display: flex;
     flex-direction: column;
     margin: 3%;
-}
-
-h1 {
-    background-color: rgb(217, 236, 252);
-    color: rgb(5, 5, 124);
-    font-family: arial, sans-serif;
-    text-align: center;
-    margin-top: 0;
-    padding: 1.5%;
-}
-
-@media (max-width: 1200px) {
-    .rezerwacja-lotu {
-        flex-basis: 100%;
-        width: 90%;
-    }
-
-    h1 {
-        width: 97%;
-    }
 }
 
 input, select {

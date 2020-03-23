@@ -200,3 +200,50 @@ h2 {
         margin-top: 15%;
     }
 }
+
+@media (max-width: 500px) {
+    .naglowek .tytul {
+        font-size: 20px;
+    }
+
+    .naglowek img {
+        width: 60px;
+    }
+
+    .skad-dokad a {
+        font-size: 12px;
+    }
+    
+    .skad-dokad a .tytul {
+        font-size: 5px;
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .info-samolot {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .naglowek .tytul {
+        font-size: 40px;
+    }
+
+    .naglowek img {
+        width: 110px;
+    }
+
+    .skad-dokad a {
+        font-size: 26px;
+    }
+    
+    .skad-dokad a .tytul {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+    .info-samolot {
+        font-size: 26px;
+    }
+}

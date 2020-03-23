@@ -5,30 +5,37 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tabela lotów</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='tabela-lotow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="parent">
-        <div class="menu">
+
+<div class="parent-grid">
+        <div class="logo">
             <img src="logo.jpg" alt="logo" class="logo">
-            <a href="strona-glowna.html">Strona główna</a>
-            <a href="tabela-lotow.html">Tabela lotów</a>
-            <a href="rezerwacja-lotu.html">Rezerwuj lot</a>
-            <button class="dropdown-btn">O nas 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Nasza flota</a>
-                <a href="#">Nasza załoga</a>
-                <a href="#">Historia</a>
-            </div>
-            <a href="#">Kontakt</a>
         </div>
-        <div class="tabela-lotow">
-            <h1>Tabela lotów</h1>
+        <div class="menu">
+            <div class="menu">
+                <a href="strona-glowna.html">Strona główna</a>
+                <a href="tabela-lotow.html">Tabela lotów</a>
+                <a href="rezerwacja-lotu.html">Rezerwuj lot</a>
+                <button class="dropdown-btn">O nas 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Nasza flota</a>
+                    <a href="#">Nasza załoga</a>
+                    <a href="#">Historia</a>
+                </div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    <div class="header">
+        <div class="title">Tabela lotów</div>
+    </div>
+    <div class="main tabela-lotow">
             <table>
                 <tr>
                     <th>Numer lotu</th>
@@ -320,8 +327,8 @@
                 </tr>
             </table>
         </div>
-        <div class="useless"></div>
-    </div> 
+</div>
+
 </body>
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");

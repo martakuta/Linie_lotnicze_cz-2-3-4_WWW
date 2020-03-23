@@ -1,37 +1,13 @@
 .tabela-lotow {
     display: flex;
     background-color: white;
-    padding: 2%;
-    padding-left: 0;
     flex-direction: column;
-    flex-basis: 75%;
-}
-
-h1 {
-    background-color: rgb(245, 245, 245);
-    color: rgb(5, 5, 124);
-    font-family: arial, sans-serif;
-    text-align: center;
-    margin-top: 0;
-    padding: 1.5%;
-    width: 78.75%;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}
-
-@media (max-width: 1200px) {
-    .tabela-lotow {
-        flex-basis: 100%;
-        width: 90%;
-    }
-
-    h1 {
-        width: 97%;
-    }
 }
 
 table a:link, table a:visited {
@@ -100,4 +76,16 @@ tr.odwolany {
 #super {
     background-color: rgb(217, 236, 252);
     border: white;
+}
+
+@media (max-width: 1200px) {
+    table {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    table {
+        font-size: 9px;
+    }
 }
