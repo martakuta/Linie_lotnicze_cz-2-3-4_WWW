@@ -11,7 +11,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="confirm">
+    <div class="confirm" id="confirm">
         Rezerwacja się powiodła
     </div>
     <div class="parent-grid">
@@ -55,7 +55,7 @@
                 <input type="text" id="fname" name="fname" placeholder="Marta"><br>
                 Data:<br>
                 <input type="date">
-                <input type="submit" value="Rezerwuj" class="submit">
+                <input type="submit" value="Rezerwuj" class="submit" id="submit" onclick="confirmReservation()">
             </div>
             <div class="prawo-formularz"> 
                 Dokąd:<br>
@@ -91,6 +91,13 @@
       dropdownContent.style.display = "block";
       }
       });
+    }
+</script>
+<script>
+    function confirmReservation() {
+        var submitBtn = document.getElementById("submit");
+        var reservationConfirm = document.getElementById("confirm");
+        reservationConfirm.style.display = 'flex';
     }
 </script>
 </html>
