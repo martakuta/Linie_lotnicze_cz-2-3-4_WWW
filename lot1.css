@@ -179,6 +179,15 @@ h2 {
     margin-left: 5%;
 }
 
+footer {
+    background-color: aliceblue;
+    padding: 5px 10px;
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    text-align: right;
+    color: rgb(61, 61, 61);
+}
+
 @media (max-width: 900px) {
     .samolot {
         flex-direction: column;
@@ -198,6 +207,18 @@ h2 {
         width: 8%;
         height: 8%;
         margin-top: 15%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .skad-dokad a {
+        font-size: 15px;
+    }
+
+    .skad-dokad a .tytul {
+        margin-left: 10%;
     }
 }
 
@@ -222,6 +243,14 @@ h2 {
 
     .info-samolot {
         font-size: 12px;
+    }
+
+    .miasto-zdj, a.pogoda {
+        display: none;
+    }
+
+    #arrow {
+        margin-top: 5%;
     }
 }
 

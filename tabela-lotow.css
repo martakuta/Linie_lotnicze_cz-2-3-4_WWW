@@ -1,11 +1,11 @@
 .tabela-lotow {
     display: flex;
-    background-color: white;
     flex-direction: column;
 }
 
 table {
     font-family: arial, sans-serif;
+    font-size: 20px;
     border-collapse: collapse;
     width: 100%;
 }
@@ -23,13 +23,12 @@ table a:hover, table a:active {
 td, th {
     border: 1px solid rgb(217, 236, 252);
     text-align: left;
-    padding: 1.5%;
+    padding: 1%;
     width: 15%;
 }
 
 td a {
     width: 100%;
-    padding: 10px;
 }
 
 table td:nth-child(6), table th:nth-child(6) {
@@ -45,47 +44,22 @@ tr.troche-opozniony {
     background-color: rgb(255, 255, 102);
 }
 
-#troche-opozniony, #troche-opozniony2 {
-    background-color: rgb(255, 255, 102);
-    border: white;
-    width: 16.75%;
-}
-
 tr.bardzo-opozniony {
     background-color: rgb(255, 153, 102);
-}
-
-#bardzo-opozniony, #bardzo-opozniony2 {
-    background-color: rgb(255, 153, 102);
-    border: white;
 }
 
 tr.odwolany {
     background-color: rgb(255, 102, 102);
 }
 
-#odwolany, #odwolany2 {
-    background-color: rgb(255, 102, 102);
-    border: white;
-}
-
-.super {
-    background-color: rgb(217, 236, 252);
-}
-
-#super {
-    background-color: rgb(217, 236, 252);
-    border: white;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     table {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     table {
-        font-size: 9px;
+        font-size: 13px;
     }
 }
